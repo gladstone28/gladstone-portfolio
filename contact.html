@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Ensure you link to your CSS file -->
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style3.css">
+</head>
+
+<body>
+    <nav>
+        <!-- Navigation Links -->
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="testimonial.html">Testimonials</a>
+        <a href="contact.html" class="active">Contact</a>
+    </nav>
+
+    <main>
+        <!-- Your Formspree contact form goes here -->
+        <div class="contact-form">
+            <h2>Contact Me</h2>
+            <!-- Replace YOUR_FORMSPREE_ENDPOINT with the URL Formspree provides -->
+            <form action="https://formspree.io/f/xwkgbvly" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="_replyto" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <!-- Hidden input to specify email subject -->
+                <input type="hidden" name="_subject" value="New submission from your portfolio!">
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-about">
+                <h3>About Me</h3>
+                <p>I'm a passionate web developer dedicated to building and optimizing interactive, user-friendly, and feature-rich websites. I leverage analytical skills and strong attention to detail to drive improvements in projects. Let's connect!</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="testimonial.html">Testimonials</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Connect With Me</h3>
+                <a href="https://www.linkedin.com">LinkedIn</a> |
+                <a href="https://github.com">GitHub</a> |
+                <a href="https://twitter.com">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+    <!-- If you have a common JS file -->
+</body>
+
+</html>

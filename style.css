@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -19,7 +20,7 @@ body, html {
 .card {
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease-in-out;
     cursor: pointer;
 }
@@ -47,4 +48,26 @@ body, html {
 
 .card-content p {
     font-size: 0.9rem;
+}
+
+.intro {
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #f5f5f5;
+    /* Light grey background */
+}
+
+.intro h2 {
+    margin-bottom: 15px;
+    color: #333;
+    /* Darker text for the title */
+}
+
+.intro p {
+    color: #666;
+    /* Lighter text for the body */
+    max-width: 800px;
+    margin: auto;
+    /* Centering the paragraph */
 }
